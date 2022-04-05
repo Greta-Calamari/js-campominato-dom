@@ -135,7 +135,6 @@ function getRandomInt(min, max) { //FUNZIONE BASE PER GEN NUMERI
 
 // funzione gameover
 
-function gameOver(){
 // qui devo mettere sia la fine dei miei attemps sia quando vado su una bomba
 // io ho gia il  numero massimo di tentativi per completare il gioco
 // ho gia la variabile con i tentativi
@@ -143,8 +142,17 @@ function gameOver(){
 // io devo scrivere che:
 // se il numero dei tentativi raggiunge il massimo (che è maxAttempt) allora ho vinto la partita
 // ma se io dovessi finire su una bomba il numero del maxattempt scende a zero e ho perso la partita
-}
+function gameOver(){
+    if(attemps <= maxAttempt){
+        let sconfitta = document.write('Hai perso la partita');
+        console.log(sconfitta)
+        
+    }else{
 
+        let vittoria = document.write('hai vinto')
+        console.log(vittoria);
+    }
+}
 
 
 
